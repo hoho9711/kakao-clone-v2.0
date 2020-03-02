@@ -34,3 +34,18 @@
   border-radius: 50%;
   font-size: 10px;
 }
+
+@keyframes showNavbar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavbar 0.5s ease-out forwards;
+  animation-delay: 0.3s; /*main이 다 로딩되면 nav가 로딩되는거처럼 보이게*/
+}
